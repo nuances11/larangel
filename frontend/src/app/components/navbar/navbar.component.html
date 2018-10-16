@@ -1,4 +1,7 @@
-<nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand" href="/">Navbar</a>
-  <a class="navbar-brand" href="#">Login</a>
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >Navbar</a>
+  <div class="pull-right">
+    <a class="navbar-brand" [routerLink]="['login']" routerLinkActive="router-link-active" >Login</a>
+    <a class="navbar-brand" [routerLink]="['profile']" routerLinkActive="router-link-active" >Profile</a>
+  </div>
 </nav>
